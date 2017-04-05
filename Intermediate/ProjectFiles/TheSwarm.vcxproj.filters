@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\TheSwarm.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{308216F2-D4D0-46B5-96D1-CAD7376DCBF3}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TheSwarm.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\TheSwarmEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{977CAD6E-D09C-4CE7-8BCE-45BF7C2A22EF}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\TheSwarm">
+			<UniqueIdentifier>{92CF314E-419A-4C86-9A7E-6C4B3A9247C0}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TheSwarm\PlayerCharacter.cpp">
+			<Filter>Source\TheSwarm</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TheSwarm\PlayerCharacter.h">
+			<Filter>Source\TheSwarm</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\TheSwarm\TheSwarm.Build.cs">
+			<Filter>Source\TheSwarm</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\TheSwarm\TheSwarm.cpp">
+			<Filter>Source\TheSwarm</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TheSwarm\TheSwarm.h">
+			<Filter>Source\TheSwarm</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
