@@ -570,7 +570,11 @@
     <ClInclude Include="..\..\Source\TheSwarm\CharacterController.h" />
     <ClInclude Include="..\..\Source\TheSwarm\PlayerCharacter.h" />
     <None Include="..\..\Source\TheSwarm\TheSwarm.Build.cs" />
+    <ClCompile Include="..\..\Source\TheSwarm\SwarmGameMode.cpp" />
+    <ClCompile Include="..\..\Source\TheSwarm\SwarmHud.cpp" />
     <ClCompile Include="..\..\Source\TheSwarm\TheSwarm.cpp" />
+    <ClInclude Include="..\..\Source\TheSwarm\SwarmGameMode.h" />
+    <ClInclude Include="..\..\Source\TheSwarm\SwarmHud.h" />
     <ClInclude Include="..\..\Source\TheSwarm\TheSwarm.h" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
