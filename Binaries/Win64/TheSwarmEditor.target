@@ -2,7 +2,7 @@
 	"TargetName" : "TheSwarmEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "355578c2-c10c-451e-a9c7-13a8a70901e3",
+	"BuildId" : "6b9a8886-56ba-442f-abf8-466282e9d81e",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,15 +17,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TheSwarm-8053.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TheSwarm-9209.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TheSwarm-8053.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TheSwarm-9209.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-TheSwarm-8053.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-TheSwarm-9209.lib",
 			"Type" : "ImportLibrary"
 		},
 		{
