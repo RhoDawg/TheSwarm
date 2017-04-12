@@ -566,8 +566,12 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <ClCompile Include="..\..\Source\TheSwarm\CharacterController.cpp" />
+    <ClCompile Include="..\..\Source\TheSwarm\Interactable.cpp" />
+    <ClCompile Include="..\..\Source\TheSwarm\Item.cpp" />
     <ClCompile Include="..\..\Source\TheSwarm\PlayerCharacter.cpp" />
     <ClInclude Include="..\..\Source\TheSwarm\CharacterController.h" />
+    <ClInclude Include="..\..\Source\TheSwarm\Interactable.h" />
+    <ClInclude Include="..\..\Source\TheSwarm\Item.h" />
     <ClInclude Include="..\..\Source\TheSwarm\PlayerCharacter.h" />
     <None Include="..\..\Source\TheSwarm\TheSwarm.Build.cs" />
     <ClCompile Include="..\..\Source\TheSwarm\SwarmGameMode.cpp" />

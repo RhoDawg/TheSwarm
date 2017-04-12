@@ -6,3 +6,14 @@
 
 
 
+ASwarmHud::ASwarmHud()
+{
+
+}
+
+
+void ASwarmHud::DrawHUD()
+{
+	Super::DrawHUD();
+
+}

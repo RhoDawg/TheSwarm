@@ -53,6 +53,12 @@
     <ClInclude Include="..\..\Source\TheSwarm\SwarmHud.h">
       <Filter>Source\TheSwarm</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TheSwarm\Interactable.h">
+      <Filter>Source\TheSwarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TheSwarm\Item.h">
+      <Filter>Source\TheSwarm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\TheSwarm\CharacterController.cpp">
@@ -62,6 +68,12 @@
       <Filter>Source\TheSwarm</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TheSwarm\SwarmHud.cpp">
+      <Filter>Source\TheSwarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TheSwarm\Interactable.cpp">
+      <Filter>Source\TheSwarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TheSwarm\Item.cpp">
       <Filter>Source\TheSwarm</Filter>
     </ClCompile>
   </ItemGroup>

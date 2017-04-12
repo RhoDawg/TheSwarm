@@ -12,7 +12,11 @@ UCLASS()
 class THESWARM_API ASwarmHud : public AHUD
 {
 	GENERATED_BODY()
-	
+public:
+	ASwarmHud();
+
+	/** Primary draw call for the HUD */
+	virtual void DrawHUD() override;
 	
 	
 	
