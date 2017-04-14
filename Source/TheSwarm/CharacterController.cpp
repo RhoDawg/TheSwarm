@@ -18,10 +18,13 @@ void ACharacterController::BeginPlay()
 	Super::BeginPlay();
 	ControlledCharacterReference = GetPawn();
 	SetupInputComponent();
+}
 
-
-
-
+void ACharacterController::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+	//Raycast every frame
+	Raycast();
 }
 
 void ACharacterController::SetupInputComponent()
@@ -67,5 +70,52 @@ void ACharacterController::SetupInputComponent()
 void ACharacterController::ClearInputActionBindings()
 {
 	InputComponent->ClearActionBindings();
+}
+
+void ACharacterController::Raycast()
+{
+	//Calculating start and end location
+	if (ControlledCharacterReference)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Controlled Character Reference = True"));
+		if (ControlledCharacterReference->GetClass()->IsChildOf(APlayerCharacter::StaticClass()))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Controlled Character Reference = True"));
+			UCameraComponent* FirstPersonCameraComponent = Cast<APlayerCharacter>(ControlledCharacterReference)->GetFirstPersonCameraComponent();
+			FVector StartLocation = FirstPersonCameraComponent->GetComponentLocation();
+			FVector EndLocation = StartLocation + (FirstPersonCameraComponent->GetForwardVector() * RaycastRange);
+
+			FHitResult RaycastHit;
+
+			//Raycast should ignore the character
+			FCollisionQueryParams CQP;
+			CQP.AddIgnoredActor(this);
+
+			//Raycast
+			GetWorld()->LineTraceSingleByChannel(RaycastHit, StartLocation, EndLocation, ECollisionChannel::ECC_WorldDynamic, CQP);
+
+
+			AItem* InteractableItem = Cast<AItem>(RaycastHit.GetActor());
+
+			if (LastItemSeen && LastItemSeen != InteractableItem)
+			{
+				//If our character sees a different pickup then disable the glowing effect on the previous seen item
+				LastItemSeen->SetGlowEffect(false);
+			}
+
+			if (InteractableItem)
+			{
+				//Enable the glow effect on the current item
+				LastItemSeen = InteractableItem;
+				InteractableItem->SetGlowEffect(true);
+			}//Re-Initialize 
+			else LastItemSeen = nullptr;
+		}
+	}
+	else
+	{
+
+		UE_LOG(LogTemp, Warning, TEXT("Controlled Character Reference = FALSE"));
+	}
 }
 

@@ -22,7 +22,7 @@ AItem::AItem()
 void AItem::BeginPlay()
 {
 	Super::BeginPlay();
-	SetGlowEffect(true);
+	//SetGlowEffect(true);
 	
 }
 
